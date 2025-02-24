@@ -2,7 +2,7 @@
 
 This BashBox will list all JS PackageManagers installed on the system, their directories and respective globally packages they installed.
 
-As of now, it checks for NPM, PNPM, Deno or Bun
+As of now, it checks for NPM, PNPM, Deno or Bun. Double-checking on Yarn, for completion sake, but chances are you are using one or some from the supported ones.
 
 _Note: A BashBox is package like a Cargo Crate, but for Bash. It can be installed, updated or uninstalled from the command-line, and bring new functionalities or tools right into the terminal ...on Linux, MacOS or WSL2._
 
@@ -23,10 +23,10 @@ Check [the QuickInstall](https://sherpa-cli.netlify.app/install/install/) page i
 1. Run the Install command
 
 ```bash
-sh install -n "pacaman" -u "https://github.com/AndiKod/pacaman-bashbox.git"
+s install -n "pacaman" -u "https://github.com/AndiKod/pacaman-bashbox.git"
 ```
 
-The repo will be cloned, the executable built from the src/ files and be available as `pacaman`.
+The repo will be cloned, script built from the src/ and be available as `pacaman`.
 
 2. Example usage
 
@@ -36,11 +36,10 @@ List all installed PackageManagers, their directories and respective global pack
 pacaman
 ```
 
-List the list of Installed PackageManagers and their actual Version
+List all Installed PackageManagers and their actual Version.
 
 ```bash
 pacaman managers
 ```
 
-...that all. Keep doing your stuff as usual, check PacaMan when you need to verifiy things or remember what and where things are installed. Happy hacking!
-
+...that's all. Keep doing your stuff as usual, check PacaMan when you need to verifiy things or remember what and where things are installed. Happy hacking!
