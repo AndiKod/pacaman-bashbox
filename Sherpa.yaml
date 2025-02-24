@@ -1,0 +1,9 @@
+package:
+  name: PacaMan
+  description: "PackageManagers data, and globally intstalled packages..."
+  version: 0.1.0
+  author: Andrei Curelaru
+  repo: github.com/user/repo
+  executable: pacaman
+  root: /home/andikod/sherpa/boxes/pacaman
+  type: localBin
