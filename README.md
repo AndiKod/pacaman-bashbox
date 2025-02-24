@@ -2,15 +2,26 @@
 
 This BashBox will list all JS PackageManagers installed on the system, their directories and respective globally packages they installed.
 
-As of now, it checks for NPM, PNPM, Deno or Bun. Double-checking on Yarn, for completion sake, but chances are you are using one or some from the supported ones.
+As of now, it checks for NPM, PNPM, Deno or Bun.
 
-_Note: A BashBox is package like a Cargo Crate, but for Bash. It can be installed, updated or uninstalled from the command-line, and bring new functionalities or tools right into the terminal ...on Linux, MacOS or WSL2._
+```bash
+pacaman
+```
+<p align="center">
+    <img src="pacaman.png" width="600" alt="Pacaman output"/>
+</p>
+
+```bash
+pacaman managers
+```
+<p align="center">
+    <img src="pacaman-managers.png" width="600" alt="Pacaman output"/>
+</p>
+
 
 ## Prerequisites
 
-[Sh:erpa](https://github.com/SherpaCLI/sherpa) need to be installed, in the same way you need Cargo to install & use crates.
-
-Be sure you have curl, git & gawk installed, then run:
+Only [Sh:erpa](https://github.com/SherpaCLI/sherpa) will be needed, as Bash package manager and script builder. Be sure you have curl, git & gawk installed, then run:
 
 ```bash
 bash -c "$(curl -sLo- https://sherpa-cli.netlify.app/install.sh)"
@@ -26,20 +37,10 @@ Check [the QuickInstall](https://sherpa-cli.netlify.app/install/install/) page i
 s install -n "pacaman" -u "https://github.com/AndiKod/pacaman-bashbox.git"
 ```
 
-The repo will be cloned, script built from the src/ and be available as `pacaman`.
+The repo will be cloned, script built from the src/ and be available as `pacaman`. See the documentation about the [sherpa install](https://sherpa-cli.netlify.app/commands/package/install) command.
 
 2. Example usage
 
-List all installed PackageManagers, their directories and respective global packages they were used for with things like `pnpm add -g cowsay`
-
-```bash
-pacaman
-```
-
-List all Installed PackageManagers and their actual Version.
-
-```bash
-pacaman managers
-```
+Once installed, just type `pacaman` or `pacaman managers` and it will print out the requested informations.
 
 ...that's all. Keep doing your stuff as usual, check PacaMan when you need to verifiy things or remember what and where things are installed. Happy hacking!
