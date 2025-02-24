@@ -1,6 +1,6 @@
 # PacaMan
 
-This BashBox will list all JS PackageManagers installed on the system, their directories and respective globally packages they installed.
+This BashBox will list all JS PackageManagers installed on the system, their directories and respective  packages they globally installed.
 
 As of now, it checks for NPM, PNPM, Deno or Bun.
 
